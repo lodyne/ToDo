@@ -1,13 +1,22 @@
 {% extends 'task/index.html' %} {% block content %}
 <div class="container d-flex justify-content-center mt-5">
-	<div class="col-md-8">
-		<h1>Landing Page</h1>
-		<a class="btn btn-sm btn-outline-info" href="{% url 'task-list'%}"
-			>View Notes</a
-		>
-		<a class="btn btn-sm btn-outline-info" href="{% url 'task-create'%}"
-			>Add Notes</a
-		>
+	<div class="card border-primary mb-3" style="max-width: 20rem">
+		<div class="card-header text-white bg-info">Awesome ToDo List</div>
+		<div class="card-body text-white bg-secondary">
+			<h6 class="card-title">Do you want to schedule your day?</h6>
+			<br />
+			<p class="card-text">Create an awesome to do list today.</p>
+			<p class="card-text">Plan your day, Change your life.</p>
+		</div>
+
+		<div class="card-footer bg-transparent border-success">
+			<a class="btn btn-sm btn-outline-info" href="{% url 'task-list'%}"
+				>View Notes</a
+			>
+			<a class="btn btn-sm btn-outline-info" href="{% url 'task-create'%}"
+				>Add Notes</a
+			>
+		</div>
 	</div>
 </div>
 {% endblock content %}
