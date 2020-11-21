@@ -12,8 +12,8 @@ from .views import(
 
 
 urlpatterns =[
-    # path('',Home.as_view(),name='home'),
-    path('',TaskListView.as_view(),name='home'),
+    path('',Home.as_view(),name='home'),
+    path('task/',TaskListView.as_view(),name='task-list'),
     path('task/<int:pk>/',TaskDetailView.as_view(),name='task-detail'),
     path('task/new',TaskCreateView.as_view(),name='task-create'),
     path('task/<int:pk>/edit/',TaskUpdateView.as_view(),name='task-update'),
