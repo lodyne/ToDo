@@ -1,3 +1,23 @@
 {
-    "python.pythonPath": "C:\\Users\\lodyne\\envs\\todo\\Scripts\\python.exe"
+    "python.pythonPath": "C:\\Users\\lodyne\\envs\\todo\\Scripts\\python.exe",
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#d495c3",
+        "activityBar.activeBorder": "#f2f6e8",
+        "activityBar.background": "#d495c3",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#f2f6e8",
+        "activityBarBadge.foreground": "#15202b",
+        "sash.hoverBorder": "#d495c3",
+        "statusBar.background": "#c571ae",
+        "statusBar.foreground": "#15202b",
+        "statusBarItem.hoverBackground": "#b64d99",
+        "statusBarItem.remoteBackground": "#c571ae",
+        "statusBarItem.remoteForeground": "#15202b",
+        "titleBar.activeBackground": "#c571ae",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveBackground": "#c571ae99",
+        "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "#c571ae"
 }

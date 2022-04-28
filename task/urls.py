@@ -23,6 +23,7 @@ urlpatterns =[
     path('',Home.as_view(),name='home'),
 
     # * urls for django rest framework
+
     path('api/',APIOverview.as_view(),name='api'),
     path('api/task_list/',APITaskList.as_view(),name='api-list'),
     path('api/task_create/new',APITaskCreate.as_view(),name='api-create'),
@@ -31,6 +32,7 @@ urlpatterns =[
     path('api/task_delete/<int:pk>/delete/',APITaskDelete.as_view(),name='api-delete'),
 
     # * urls for traditional django
+    
     path('task/',TaskListView.as_view(),name='task-list'),
     path('task/<int:pk>/',TaskDetailView.as_view(),name='task-detail'),
     path('task/new',TaskCreateView.as_view(),name='task-create'),

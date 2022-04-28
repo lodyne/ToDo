@@ -1,7 +1,9 @@
-{% extends 'task/index.html' %} {% block content %}
+{% extends 'task/index.html' %} 
+{% block content %}
+{% comment %} {% load static %} {% endcomment %}
 <div class="container d-flex justify-content-center mt-5">
 	<div class="col-md-8">
-		<div class="card">
+		<div class="card ">
 			<div class="card-body">
 				<div class="card-header bg-info text-black font-weight-bold mr-2">
 					<a class="text-decoration-none" href="{% url 'home' %}">
@@ -16,15 +18,17 @@
 						<p>{{object.notes}}</p>
 						<small class="">{{object.date_created|date:"F j,Y "}}</small>
 						<a
-							class="btn btn-sm btn-info"
-							href="{% url 'task-update' object.id %}"
-							>Update</a
-						>
-						<a
-							class="btn btn-sm btn-danger"
-							href="{% url 'task-delete' object.id %}"
-							>Delete</a
-						>
+							class="btn btn-sm btn-info mx-2 float-right"
+							href="{% url 'task-update' object.id %}">
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </a>
+						<button
+                            type="button"
+							class="btn btn-sm btn-danger float-right"
+							href="{% url 'task-delete' object.id %}">
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                            
+                        </button>
 					</li>
 				</ul>
 				{% endfor %}
